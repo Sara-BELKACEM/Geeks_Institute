@@ -6,7 +6,7 @@ class Cat:
 Cat1 = Cat("Tom",5)
 Cat2 = Cat("Sky",3)
 Cat3 = Cat("Milo",2)
-
+# oldest = max([Cat1,Cat2,Cat3], key=lambda x: x.age)
 def oldest_cat(cats):
     oldest = cats[0]
     for cat in cats:

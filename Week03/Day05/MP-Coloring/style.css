@@ -1,0 +1,90 @@
+/*AI HELP*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-panel {
+  width: 20%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#clearBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 90%;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr); 
+  gap: 8px;
+  width: 90%;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.swatch {
+  width: 100%;
+  height: 100%; 
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.swatch.selected {
+  border: 3px solid black;
+}
+
+.grid-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 2px;
+  padding: 20px;
+  background-color: white;
+}
+
+.square {
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

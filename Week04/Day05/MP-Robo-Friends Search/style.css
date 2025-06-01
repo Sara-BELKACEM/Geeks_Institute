@@ -1,0 +1,97 @@
+body {
+  font-family: 'Space Age', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("bi1.png"); 
+  background-color: #5c1dae;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+
+.navbar {
+  background-color: #2ecc71;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 2.2rem;
+  color: black;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;                                           
+}
+
+#search {
+  padding: 10px;
+  width: 800px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 300px;
+}
+
+
+#robot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card {
+  background-color: #3bd2c3;
+  background-image: url("bi2.png"); 
+  border-radius: 10px;
+  width: 25%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  color: #000000;
+  text-align: center;
+  position: relative;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #3b3131; 
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0 0 5px;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #333;
+  margin: 0;
+ font-family: 'Roboto Mono', monospace;
+}
+
+

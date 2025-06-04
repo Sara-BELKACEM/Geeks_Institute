@@ -1,0 +1,36 @@
+body {
+  background: url('stars-stardust-deep.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.logo {
+  width: 300px;
+}
+
+#info-box {
+  border: 2px solid yellow;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+button {
+  background-color: yellow;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

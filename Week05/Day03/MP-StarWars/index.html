@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Web App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <img src="Star_Wars_Logo.svg.png" alt="Star Wars" class="logo">
+
+    <div id="info-box">
+      <h2 id="name">Character Name</h2>
+      <p><strong>Height:</strong> <span id="height"></span></p>
+      <p><strong>Gender:</strong> <span id="gender"></span></p>
+      <p><strong>Birth Year:</strong> <span id="birthYear"></span></p>
+      <p><strong>Home World:</strong> <span id="homeWorld"></span></p>
+    </div>
+
+    <button id="findBtn">Find Someone</button>
+    <p id="loading" class="hidden"><i class="fas fa-spinner fa-spin"></i> Loading...</p>
+    <p id="error" class="hidden">Failed to fetch data. Please try again.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

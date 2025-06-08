@@ -1,5 +1,4 @@
 const apiKey = '68c3b4be753392dee8c80280'; 
-
 const fromSelect = document.getElementById('fromCurrency');
 const toSelect = document.getElementById('toCurrency');
 const amountInput = document.getElementById('amount');

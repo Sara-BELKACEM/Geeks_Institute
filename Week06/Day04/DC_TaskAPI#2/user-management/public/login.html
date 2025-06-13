@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h1>Login :</h1>
+  <form id="loginForm">
+    Username <input type="text" id="username"><br>
+    Password <input type="password" id="password"><br><br>
+    <button id="loginBtn" disabled>Login</button>
+  </form>
+  <p id="message"></p>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const btn = document.getElementById('loginBtn');
+
+    form.addEventListener('input', () => {
+      btn.disabled = !(form.username.value && form.password.value);
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: form.username.value,
+          password: form.password.value
+        })
+      });
+
+      const msg = await res.text();
+      document.getElementById('message').textContent = msg;
+    });
+  </script>
+</body>
+</html>

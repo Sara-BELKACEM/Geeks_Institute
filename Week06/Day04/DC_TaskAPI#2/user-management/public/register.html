@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <h1>Register :</h1>
+  <form id="registerForm">
+  First name <input type="text" name="firstName" id="firstName"><br>
+  Last name <input type="text" name="lastName" id="lastName"><br>
+  Email <input type="email" name="email" id="email"><br>
+  username <input type="text" name="username" id="username"><br>
+  password <input type="password" name="password" id="password"><br><br>
+  <button id="registerBtn" disabled>Register</button>
+</form>
+<p id="message"></p>
+
+<script>
+  const form = document.getElementById('registerForm');
+  const btn = document.getElementById('registerBtn');
+  const inputs = form.querySelectorAll('input');
+
+  form.addEventListener('input', () => {
+    const allFilled = [...inputs].every(input => input.value.trim() !== '');
+    btn.disabled = !allFilled;
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const user = {
+      firstName: form.firstName.value,
+      lastName: form.lastName.value,
+      email: form.email.value,
+      username: form.username.value,
+      password: form.password.value,
+    };
+
+    const res = await fetch('/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(user)
+    });
+
+    const msg = await res.text();
+    document.getElementById('message').textContent = msg;
+  });
+</script>
+
+</body>
+</html>

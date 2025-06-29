@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.vote-box {
+  background-color: #ffe4b5;
+  padding: 15px;
+  margin: 10px auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+button {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
+}

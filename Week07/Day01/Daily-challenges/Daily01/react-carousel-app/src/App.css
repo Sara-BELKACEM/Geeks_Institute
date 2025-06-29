@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+}

@@ -1,0 +1,40 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.8s ease;
+  padding: 2rem;
+}
+
+.quote-box {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.quote-text {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.quote-author {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.new-quote {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
